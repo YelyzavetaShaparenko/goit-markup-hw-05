@@ -688,3 +688,32 @@ ol,
   background-color: var(--pressed-state-cl);
   border: none;
 }
+/*Form styles*/
+.modal-form {
+  display: block;
+  padding: 72px 24px 24px;
+  width: 408px;
+  height: 584px;
+}
+input:not([type='checkbox']) {
+  display: block;
+  min-width: 360px;
+  height: 40px;
+}
+.form-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--hero-background-cl);
+  text-align: center;
+}
+textarea {
+  display: block;
+  min-width: 360px;
+  min-height: 120px;
+}
+.label-form {
+  display: block;
+}
+.checkbox-input {
+}
