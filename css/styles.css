@@ -651,7 +651,12 @@ ol,
   border-radius: 4px;
   border: 1px solid var(--white-cl);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: var(--dark-cl);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-cl));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   width: 264px;
   height: 40px;
   padding: 8px 16px;
@@ -664,7 +669,6 @@ ol,
 .subscribe-form-input::placeholder {
   font-size: 12px;
   font-style: normal;
-
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -686,12 +690,16 @@ ol,
   min-width: 165px;
   min-height: 40px;
   border: none;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-btn:focus,
 .subscribe-btn:hover {
   background-color: var(--pressed-state-cl);
+}
+.footer-subscribe-icon{
+   margin-left: 16px; 
 }
 /*Modal styles*/
 .backdrop {
