@@ -778,6 +778,7 @@ ol,
 }
 .input-container {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .comment-input-container {
@@ -808,7 +809,6 @@ ol,
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--backdrop-cl);
-  height: 40px;
   padding: 22px 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -856,6 +856,10 @@ ol,
   border-color: var(--primary-brand-cl);
 }
 .agreement-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 24px;
 }
 .modal-form-agreement {
@@ -894,13 +898,16 @@ ol,
   border-radius: 2px;
   border: 1px solid var(--backdrop-cl);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-checkbox-icon {
   fill: var(--light-cl);
 }
-.modal-form-checkbox:checked + .modal-form-agreement .modal-form-custom-checkbox {
-  border-color: var(--pressed-state-cl);
+
+.modal-form-checkbox:checked
+  + .modal-form-agreement
+  .modal-form-custom-checkbox
+  .modal-form-checkbox-icon {
   background-color: var(--pressed-state-cl);
   border: none;
   fill: var(--light-cl);
