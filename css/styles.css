@@ -630,7 +630,6 @@ ol,
 /* Subscribe form styles*/
 .subscribe-container {
   display: block;
-  /* min-width: 453px;*/
 }
 
 .subscribe-form-title {
@@ -773,7 +772,6 @@ ol,
 .modal-form-field {
   display: block;
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -827,7 +825,6 @@ ol,
 }
 .modal-form-icon {
   position: absolute;
-
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
@@ -870,7 +867,7 @@ ol,
   margin-bottom: 24px;
 }
 .modal-form-agreement {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   font-size: 12px;
