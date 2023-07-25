@@ -800,7 +800,7 @@ ol,
 }
 
 .modal-form-label {
-  display: block;
+  display: inline-flex;
   margin-bottom: 4px;
   color: var(--lightslate);
   font-size: 12px;
@@ -870,7 +870,7 @@ ol,
   margin-bottom: 24px;
 }
 .modal-form-agreement {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
   font-size: 12px;
