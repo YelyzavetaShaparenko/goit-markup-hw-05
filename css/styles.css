@@ -800,7 +800,7 @@ ol,
 }
 
 .modal-form-label {
-  display: inline-flex;
+  display: block;
   margin-bottom: 4px;
   color: var(--lightslate);
   font-size: 12px;
@@ -886,17 +886,16 @@ ol,
   text-decoration: underline;
 }
 .modal-form-custom-checkbox {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   width: 16px;
   height: 16px;
-  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 .modal-form-checkbox:checked + .modal-form-agreement .modal-form-custom-checkbox {
   background-color: var(--pressed-state-cl);
