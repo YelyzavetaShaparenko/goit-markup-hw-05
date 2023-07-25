@@ -862,12 +862,10 @@ ol,
 .agreement-container {
   display: flex;
   gap: 8px;
-  justify-content: center;
   align-items: center;
   margin-bottom: 24px;
 }
 .modal-form-agreement {
-  display: flex;
   align-items: center;
   gap: 8px;
   font-size: 12px;
@@ -892,6 +890,7 @@ ol,
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 .modal-form-checkbox:checked + .modal-form-agreement .modal-form-custom-checkbox {
   background-color: var(--pressed-state-cl);
